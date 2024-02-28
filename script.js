@@ -1,3 +1,4 @@
+console.log('Hola, mundo!');
 var coloresMaterias = {};
 function agregarMateria() {
     var dia = prompt("Ingrese el día de la semana (ej. lunes)").toLowerCase();
@@ -10,7 +11,6 @@ function agregarMateria() {
         var colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16);
         coloresMaterias[materia] = colorAleatorio;
     }
-  
     var materiaDiv = document.createElement('div');
     materiaDiv.classList.add('materia');
     materiaDiv.style.backgroundColor = coloresMaterias[materia]; // Asignar el color de fondo

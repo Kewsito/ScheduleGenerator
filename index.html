@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/styles.css">
-    <title>Agenda Universitaria</title>
-</head>
-<body>
-    <div class="flex flex-row">
-        <h1 class="text-left text-white m-5 text-2xl">Horario Universitario</h1>
-        <button class="rounded text-white border-white border-2 p-2 cursor:pointer hover:bg-gray-700 m-3 flex text-center text-lg" onclick="agregarMateria()">Agregar Materia</button>
-    </div>
-    <div id="horario" class="border-gray-800 border-2 w-full h-auto ">
-        <div id="lunes" class="dia bg-blue-700">
-            <h2>Lunes</h2>
-            <!-- Aquí se insertarán las materias del lunes -->
-        </div>
-        <div id="martes" class="dia">
-            <h2>Martes</h2>
-            <!-- Aquí se insertarán las materias del martes -->
-        </div>
-        <div id="miercoles" class="dia">
-            <h2>Miércoles</h2>
-            <!-- Aquí se insertarán las materias del miércoles -->
-        </div>
-        <div id="jueves" class="dia">
-            <h2>Jueves</h2>
-            <!-- Aquí se insertarán las materias del jueves -->
-        </div>
-        <div id="viernes" class="dia">
-            <h2>Viernes</h2>
-            <!-- Aquí se insertarán las materias del viernes -->
-        </div>
-    </div>
-    <script src="/script.js"></script>
-</body>
-</html>
-<!-- ========== Start Section ========== -->
-<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
-<!-- ========== End Section ========== -->
+    <link rel="stylesheet" href="/styles.css" />
 
+
+    <title>Agenda Horaria</title>
+</head>
+<body >
+    <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+        <header class="flex justify-between items-center p-4">
+            <h1 class="text-white text-3xl font-bold">
+                Horarios
+            </h1>
+            <button onclick="agregarMateria()" class="inline-flex items-center hover:text-black hover:animate-bounce justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-primary/90 h-10 px-4 py-2 bg-[#00B4D8] text-white">
+                Agregar Materia
+            </button>
+        </header>
+        <main class="flex justify-center items-center h-[calc(90vh-34px)] text-black">
+            <div class="flex flex-col md:flex-row md:space-x-8 font-bold">
+                <div class="bg-[#0077B6] border border-white w-full md:w-auto mb-2 md:mb-0 p-2 rounded" id="lunes">Lunes</div>
+                <div class="bg-[#D00000] border border-white w-full md:w-auto mb-2 md:mb-0 p-2 rounded" id="martes">Martes</div>
+                <div class="bg-[#FFBA08] border border-white w-full md:w-auto mb-2 md:mb-0 p-2 rounded" id="miercoles">Miércoles</div>
+                <div class="bg-[#8338EC] border border-white w-full md:w-auto mb-2 md:mb-0 p-2 rounded" id="jueves">Jueves</div>
+                <div class="bg-[#0096C7] border border-white w-full md:w-auto p-2 rounded" id="viernes">Viernes</div>
+            </div>
+        </main>
+
+        <footer class="bottom-0 w-full text-center p-2">
+            <div >
+                <span class="text-white"> <a href="http://kewsito.github.io" class="hover:underline" target="_blank">@kewsito.</a>
+                    Todos los derechos reservados.
+                </span>
+            </div>
+        </footer>
+    </div>
+    <!-- ========== Start SCRIPTS ========== -->
+    <script src="/script.js"></script>
+    <!-- ========== End SCRIPTS ========== -->
+    
+</body>

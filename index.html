@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/styles.css">
+    <title>Agenda Universitaria</title>
+</head>
+<body>
+    <div class="flex flex-row">
+        <h1 class="text-left text-white m-5 text-2xl">Horario Universitario</h1>
+        <button class="rounded text-white border-white border-2 p-2 cursor:pointer hover:bg-gray-700 m-3 flex text-center text-lg" onclick="agregarMateria()">Agregar Materia</button>
+    </div>
+    <div id="horario" class="border-gray-800 border-2 w-full h-auto ">
+        <div id="lunes" class="dia bg-blue-700">
+            <h2>Lunes</h2>
+            <!-- Aquí se insertarán las materias del lunes -->
+        </div>
+        <div id="martes" class="dia">
+            <h2>Martes</h2>
+            <!-- Aquí se insertarán las materias del martes -->
+        </div>
+        <div id="miercoles" class="dia">
+            <h2>Miércoles</h2>
+            <!-- Aquí se insertarán las materias del miércoles -->
+        </div>
+        <div id="jueves" class="dia">
+            <h2>Jueves</h2>
+            <!-- Aquí se insertarán las materias del jueves -->
+        </div>
+        <div id="viernes" class="dia">
+            <h2>Viernes</h2>
+            <!-- Aquí se insertarán las materias del viernes -->
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
+<!-- ========== Start Section ========== -->
+<div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+<!-- ========== End Section ========== -->
+

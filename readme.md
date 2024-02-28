@@ -8,5 +8,5 @@ It provides a user interface for managing a university schedule.
     * JAVASCRIPT: 🔴🔴🔴
     * TAILWIND: 🔴🔴🔴
 
-## Authors:
+## Authors ✒️✒️
     * @Kewsito - https://kewsito.github.io/
